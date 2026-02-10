@@ -1,57 +1,65 @@
 # Calendrier 2026
 
-A single-file HTML calendar for the year 2026, designed for French users. Open `calendar2026.html` in any browser — no server or dependencies required.
+Calendrier annuel 2026 en HTML, avec jours fériés, vacances scolaires et saints du jour. Déployé sur [www.calendrier-annuel.fr](https://www.calendrier-annuel.fr/).
 
-## Features
+## Fonctionnalités
 
-- **12-month grid** laid out as columns with days as rows (1-31)
-- **Jours feries** (public holidays) highlighted in red
-- **Vacances scolaires** for all three French academic zones, shown as colored badges:
-  - **A** (green) — Besancon, Bordeaux, Clermont-Ferrand, Dijon, Grenoble, Limoges, Lyon, Poitiers
-  - **B** (orange) — Aix-Marseille, Amiens, Caen, Lille, Nancy-Metz, Nantes, Nice, Orleans-Tours, Reims, Rennes, Rouen, Strasbourg
-  - **C** (purple) — Creteil, Montpellier, Paris, Toulouse, Versailles
-- **Saints du jour** for each date
-- **ISO week numbers** displayed on Mondays
-- **Weekends** highlighted in blue
+- **Grille 12 mois** en colonnes avec les jours en lignes (1-31)
+- **Jours fériés** surlignés en rouge
+- **Vacances scolaires** pour les trois zones académiques, indiquées par des barres colorées :
+  - **Zone A** (vert) — Besançon, Bordeaux, Clermont-Ferrand, Dijon, Grenoble, Limoges, Lyon, Poitiers
+  - **Zone B** (orange) — Aix-Marseille, Amiens, Caen, Lille, Nancy-Metz, Nantes, Nice, Orléans-Tours, Reims, Rennes, Rouen, Strasbourg
+  - **Zone C** (violet) — Créteil, Montpellier, Paris, Toulouse, Versailles
+- **Saints du jour** pour chaque date
+- **Numéros de semaine ISO** affichés le lundi
+- **Week-ends** surlignés en bleu
 
-## School holidays 2025-2026 (within 2026)
+## Vacances scolaires 2025-2026 (dans l'année 2026)
 
-| Period | Zone A | Zone B | Zone C |
+| Période | Zone A | Zone B | Zone C |
 |---|---|---|---|
-| Noel 2025-2026 | Jan 1-4 | Jan 1-4 | Jan 1-4 |
-| Hiver | Feb 7-22 | Feb 14 - Mar 1 | Feb 21 - Mar 8 |
-| Printemps | Apr 4-19 | Apr 11-26 | Apr 18 - May 3 |
-| Pont Ascension | May 15-16 | May 15-16 | May 15-16 |
-| Ete | Jul 4+ | Jul 4+ | Jul 4+ |
+| Noël 2025-2026 | 1-4 janv. | 1-4 janv. | 1-4 janv. |
+| Hiver | 7-22 fév. | 14 fév. - 1 mars | 21 fév. - 8 mars |
+| Printemps | 4-19 avr. | 11-26 avr. | 18 avr. - 3 mai |
+| Pont de l'Ascension | 15-16 mai | 15-16 mai | 15-16 mai |
+| Été | à partir du 4 juil. | à partir du 4 juil. | à partir du 4 juil. |
 
-## School holidays 2026-2027 (within 2026)
+## Vacances scolaires 2026-2027 (dans l'année 2026)
 
-| Period | All zones |
+| Période | Toutes zones |
 |---|---|
-| Toussaint | Oct 17 - Nov 1 |
-| Noel | Dec 19-31 |
+| Toussaint | 17 oct. - 1 nov. |
+| Noël | 19-31 déc. |
 
-## Public holidays 2026
+## Jours fériés 2026
 
-| Date | Holiday |
+| Date | Jour férié |
 |---|---|
-| Jan 1 | Jour de l'An |
-| Apr 5 | Dimanche de Paques |
-| Apr 6 | Lundi de Paques |
-| May 1 | Fete du Travail |
-| May 8 | Victoire 1945 |
-| May 14 | Ascension |
-| May 25 | Lundi de Pentecote |
-| Jul 14 | Fete nationale |
-| Aug 15 | Assomption |
-| Nov 1 | Toussaint |
-| Nov 11 | Armistice 1918 |
-| Dec 25 | Noel |
+| 1er janvier | Jour de l'An |
+| 5 avril | Dimanche de Pâques |
+| 6 avril | Lundi de Pâques |
+| 1er mai | Fête du Travail |
+| 8 mai | Victoire 1945 |
+| 14 mai | Ascension |
+| 25 mai | Lundi de Pentecôte |
+| 14 juillet | Fête nationale |
+| 15 août | Assomption |
+| 1er novembre | Toussaint |
+| 11 novembre | Armistice 1918 |
+| 25 décembre | Noël |
 
-## Usage
+## Déploiement
 
-Open `calendar2026.html` directly in a web browser. The calendar is generated client-side with JavaScript — no build step needed.
+Le site est hébergé sur **Cloudflare Pages**. Le dossier `public/` contient tous les fichiers servis :
 
-## Source
+- `index.html` — le calendrier (généré côté client en JavaScript)
+- `robots.txt` et `sitemap.xml` — pour le référencement
+- `_headers` et `_redirects` — configuration Cloudflare Pages
 
-Holiday dates from [service-public.fr](https://www.service-public.gouv.fr/particuliers/vosdroits/F31952).
+## Utilisation locale
+
+Ouvrir `public/index.html` dans un navigateur. Aucun serveur ni dépendance nécessaire.
+
+## Sources
+
+Dates des jours fériés et vacances scolaires : [service-public.fr](https://www.service-public.gouv.fr/particuliers/vosdroits/F31952).
