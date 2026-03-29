@@ -168,6 +168,16 @@
   td.empty {
     background: #fafafa;
   }
+  /* Today */
+  tr td.today {
+    background: #1a73e8;
+  }
+  tr td.today .day-num,
+  tr td.today .day-name,
+  tr td.today .saint {
+    color: #ffffff;
+    font-weight: bold;
+  }
 </style>
 </head>
 <body>
@@ -343,9 +353,13 @@ function buildHalf(tableId, startMonth, endMonth) {
       const vacC_prev = (prevD >= 1) ? isVacancesC(month, prevD) : false;
       const vacC_next = (nextD <= maxD) ? isVacancesC(month, nextD) : false;
 
+      const todayDate = new Date();
+      const isToday = (todayDate.getFullYear() === 2026 && todayDate.getMonth() === m && todayDate.getDate() === d);
+
       let cls = [];
       if (isWeekend) cls.push("weekend");
       if (isFerie) cls.push("ferie");
+      if (isToday) cls.push("today");
 
       const saint = isFerie ? FERIES[dateStr] : SAINTS[month][d - 1];
       let weekBadge = "";
