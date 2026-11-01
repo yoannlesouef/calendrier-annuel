@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.calendrier-annuel.fr/</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.calendrier-annuel.fr/2026/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.calendrier-annuel.fr/2027/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

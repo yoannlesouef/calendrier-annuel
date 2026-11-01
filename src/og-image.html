@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Source de public/og-image.png (1200x630), capture avec Chrome headless :
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
+       --screenshot=public/og-image.png --window-size=1200,630 src/og-image.html -->
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex; align-items: center; gap: 70px;
+    padding: 0 90px;
+    color: #2c3e50;
+  }
+  svg { flex: none; }
+  h1 { font-size: 76px; line-height: 1.05; }
+  p { font-size: 34px; margin-top: 24px; color: #555; line-height: 1.35; }
+  .zones { display: flex; gap: 14px; margin-top: 34px; }
+  .zones span { color: #fff; font-size: 26px; font-weight: 700; padding: 6px 18px; border-radius: 8px; }
+  .site { margin-top: 36px; font-size: 28px; font-weight: 600; color: #3498db; }
+</style>
+</head>
+<body>
+<svg width="300" height="300" viewBox="0 0 32 32">
+  <rect x="2" y="5" width="28" height="25" rx="3" fill="#fff" stroke="#2c3e50" stroke-width="1.5"/>
+  <rect x="2" y="5" width="28" height="8" rx="3" fill="#2c3e50"/>
+  <rect x="2" y="10" width="28" height="3" fill="#2c3e50"/>
+  <rect x="8" y="2" width="3" height="6" rx="1.5" fill="#2c3e50"/>
+  <rect x="21" y="2" width="3" height="6" rx="1.5" fill="#2c3e50"/>
+  <rect x="6" y="16" width="4" height="4" rx="0.5" fill="#fce4ec"/>
+  <rect x="14" y="16" width="4" height="4" rx="0.5" fill="#27ae60"/>
+  <rect x="22" y="16" width="4" height="4" rx="0.5" fill="#e67e22"/>
+  <rect x="6" y="23" width="4" height="4" rx="0.5" fill="#8e44ad"/>
+  <rect x="14" y="23" width="4" height="4" rx="0.5" fill="#1a73e8"/>
+  <rect x="22" y="23" width="4" height="4" rx="0.5" fill="#eaf0fb"/>
+</svg>
+<div>
+  <h1>Calendrier annuel</h1>
+  <p>Jours fériés, vacances scolaires,<br>saints du jour et numéros de semaine</p>
+  <div class="zones">
+    <span style="background:#27ae60">Zone A</span>
+    <span style="background:#e67e22">Zone B</span>
+    <span style="background:#8e44ad">Zone C</span>
+  </div>
+  <div class="site">calendrier-annuel.fr</div>
+</div>
+</body>
+</html>
